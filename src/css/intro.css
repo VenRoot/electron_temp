@@ -1,0 +1,70 @@
+/**
+    My profile animation shit
+*/
+#VenProfile {
+    position:absolute;
+    height: 300px; 
+    width: 300px;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+/** 
+    Animation text
+*/
+
+#VenSignature {
+    top: 120%;
+    width: -50%;
+    height: -50%;
+    stroke-dasharray: 916.3208618164062;
+    stroke-dashoffset: 916.3208618164062;
+    animation: sign 7s ease;
+    animation-delay: 3s, 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/**
+    Centering the shit
+*/
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}

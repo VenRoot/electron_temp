@@ -1,0 +1,4 @@
+*.py linguist-generated
+*.cmd linguist-generated
+*.json linguist-generated
+*.js linguist-documentation

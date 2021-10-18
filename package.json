@@ -1,0 +1,43 @@
+{
+    "name": "vivida",
+    "version": "1.0.0",
+    "description": "vivida game",
+    "main": "main.js",
+    "scripts": {
+        "build:linux": "tsc && cp -r ./src/*.html ./src/css/ ./out/",
+        "build:windows": "tsc && copy.cmd",
+        "start": "node start.js",
+        "start:windows": "npm run build:windows && electron out",
+        "start:linux": "npm run build:linux && electron out",
+        "start:pythonwindows": "electron out"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/skahdidev/vivida.git"
+    },
+    "author": "Snepwolf",
+    "contributors": [
+        {
+            "name": "VenRoot",
+            "url": "https://github.com/VenRoot"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/skahdidev/vivida/issues"
+    },
+    "homepage": "https://github.com/skahdidev/vivida#readme",
+    "engines": {
+        "node": ">=12"
+    },
+    "files": [
+        "out/"
+    ],
+    "devDependencies": {
+        "@tsconfig/node16": "^1.0.2",
+        "@types/css": "^0.0.33",
+        "@types/jquery": "^3.5.7",
+        "@types/node": "^16.11.1",
+        "electron": "^15.2.0",
+        "jquery": "^3.6.0"
+    }
+}
