@@ -37,7 +37,7 @@
         "@types/css": "^0.0.33",
         "@types/jquery": "^3.5.7",
         "@types/node": "^16.11.1",
-        "electron": "^15.2.0",
+        "electron": "^15.3.5",
         "jquery": "^3.6.0"
     }
 }
